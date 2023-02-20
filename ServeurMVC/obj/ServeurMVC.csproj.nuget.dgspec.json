@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\ServeurMVC\\ServeurMVC.csproj": {}
+    "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\ServeurMVC\\ServeurMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\DAL\\DAL.csproj": {
+    "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\IB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\IB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,34 +66,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\ServeurMVC\\ServeurMVC.csproj": {
+    "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\ServeurMVC\\ServeurMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\ServeurMVC\\ServeurMVC.csproj",
+        "projectUniqueName": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\ServeurMVC\\ServeurMVC.csproj",
         "projectName": "ServeurMVC",
-        "projectPath": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\ServeurMVC\\ServeurMVC.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\ServeurMVC\\obj\\",
+        "projectPath": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\ServeurMVC\\ServeurMVC.csproj",
+        "packagesPath": "C:\\Users\\IB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\ServeurMVC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\IB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\TrocObjet\\TrocObjet\\DAL\\DAL.csproj"
+              "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\IB\\Desktop\\Projet trocobjet\\TrocObjet-1\\DAL\\DAL.csproj"
               }
             }
           }
@@ -141,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,6 +21,10 @@ export class ObjectComponent {
     this.results=await this.objectService.searchItemAsync(searchText);
     this.waiting=false;
   }
+
+  showObject(r:SearchResult){
+    this.router.navigateByUrl("details-object/"+r.id);
+  }
 }
 
 

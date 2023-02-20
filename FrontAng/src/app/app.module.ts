@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppUserComponent } from './pages/app-user/app-user.component';
 import { ObjectComponent } from './pages/object/list-objet/list-object.component';
 import { DetailsObjectComponent } from './pages/object/details-object/details-object.component';
+import { ListSearchResultComponent } from './controls/list-search-result/list-search-result.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DetailsObjectComponent } from './pages/object/details-object/details-ob
     AppComponent,
     AppUserComponent,
     ObjectComponent,
-    DetailsObjectComponent
+    DetailsObjectComponent,
+    ListSearchResultComponent
   ],
   imports: [
     FormsModule,
