@@ -17,8 +17,17 @@ export class ObjectHttpService implements objectService {
         
     }
 
-    saveItemAsync(item: Object): Promise<Guid> {
-        throw new Error("Method not implemented.");
+    async saveItemAsync(item: Object){
+        var guid = Guid.create();
+        var dto ={
+            "id":guid.toString(),
+            "l": item.label,
+            "d":item.description
+        };
+        var requete = this.httpClient.post(`http://localhost:5088/api/Object`, dto);
+        var promesse = lastValueFrom(requete);
+        var resultatPromesse = await promesse as boolean;
+        return guid;
     }
     deleteItemAsync(id: Guid): Promise<void> {
         throw new Error("Method not implemented.");

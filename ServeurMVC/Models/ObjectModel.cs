@@ -5,7 +5,7 @@ public class ObjectModel
     public Guid IdObject { get; set; } = Guid.NewGuid();
 
     [JsonPropertyName("ow")]
-    public AppUserDAO Owner { get; set; }
+    public AppUserDAO? Owner { get; set; }
 
     [JsonPropertyName("l")]
     public string Label { get; set; }
@@ -15,5 +15,5 @@ public class ObjectModel
     [JsonPropertyName("ep")]
     public decimal EstimatedPrice { get; set; }
     [JsonPropertyName("idp")]
-    public IEnumerable<Guid> IdPhotos { get; set; }
+    public IEnumerable<Guid>? IdPhotos { get; set; }
 }

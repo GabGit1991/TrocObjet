@@ -31,7 +31,7 @@ import { objectService } from './models/object.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [provide:objectService,useclass:ObjectHttpService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
