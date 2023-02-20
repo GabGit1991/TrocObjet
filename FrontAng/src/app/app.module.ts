@@ -8,6 +8,11 @@ import { AppComponent } from './app.component';
 import { AppUserComponent } from './pages/app-user/app-user.component';
 import { ObjectComponent } from './pages/object/list-objet/list-object.component';
 import { DetailsObjectComponent } from './pages/object/details-object/details-object.component';
+import { ListSearchResultComponent } from './controls/list-search-result/list-search-result.component';
+import { EditObjectComponent } from './pages/object/edit-object/edit-object.component';
+import { CreateObjectComponent } from './pages/object/create-object/create-object.component';
+import { ObjectHttpService } from './models/object-http.service';
+import { objectService } from './models/object.service';
 
 
 @NgModule({
@@ -15,7 +20,10 @@ import { DetailsObjectComponent } from './pages/object/details-object/details-ob
     AppComponent,
     AppUserComponent,
     ObjectComponent,
-    DetailsObjectComponent
+    DetailsObjectComponent,
+    ListSearchResultComponent,
+    EditObjectComponent,
+    CreateObjectComponent
   ],
   imports: [
     FormsModule,
@@ -23,7 +31,7 @@ import { DetailsObjectComponent } from './pages/object/details-object/details-ob
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

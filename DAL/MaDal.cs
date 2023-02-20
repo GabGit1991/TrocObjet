@@ -58,6 +58,8 @@ public class MaDal : IdentityDbContext<AccountDAO, RoleDAO, Guid>
         var ac2 = new AccountDAO() { UserName = "Jul" };
         var ac3 = new AccountDAO() { UserName = "Ben" };
 
+       
+
         modelBuilder.Entity<AccountDAO>().HasData(new List<AccountDAO>() { ac1, ac2, ac3 });
 
         var u1 = new AppUserDAO() { IdUser = ac1.Id, FirstName = "Gabriel", LastName = "Dupond", PhoneNumber = "0546659845", City = "Bordeaux" };
@@ -146,6 +148,11 @@ public class MaDal : IdentityDbContext<AccountDAO, RoleDAO, Guid>
 
 
         modelBuilder.Entity<ObjectDAO>().HasData(new List<ObjectDAO>() { o1, o2, o3, o4 , o5 , o6 , o7 ,o8 ,o9});
+
+        var p1 = new PhotoDAO(){IdObject = o1.IdObject, Path = "https://images.unsplash.com/photo-1599914466149-1b958674b7ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"};
+        var p2 = new PhotoDAO(){IdObject = o1.IdObject, Path = "https://images.unsplash.com/photo-1596277922657-f80257171aec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hvdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"};
+        var p3 = new PhotoDAO(){IdObject = o1.IdObject, Path = "https://images.unsplash.com/photo-1633859118812-a5abc2ff4de4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNob3ZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"};
+        modelBuilder.Entity<PhotoDAO>().HasData(new List<PhotoDAO>(){p1,p2,p3});
 
         if (this.seedData != null)
         {

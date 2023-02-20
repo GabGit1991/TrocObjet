@@ -6,9 +6,10 @@
 </div>
 <div class="mb-3">
     <button class="btn btn-primary" (click)="rechercher(searchText.value)">Rechercher</button>
+    <button class="btn btn-secondary" routerLink="/create-object" >Création</button>
 </div>
 
-<div class="list-group">
+<!-- <div class="list-group">
     <div *ngFor="let r of results" class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">{{r.label}}</div>
@@ -16,4 +17,7 @@
         </div>
         <span class="badge bg-primary rounded-pill">{{r.description}}</span>
     </div>
-</div>
+</div> -->
+
+<app-list-search-result *ngIf="results" (searchResultClick)="showObject($event)"
+  [searchResults]="results"></app-list-search-result>
