@@ -58,6 +58,8 @@ public class MaDal : IdentityDbContext<AccountDAO, RoleDAO, Guid>
         var ac2 = new AccountDAO() { UserName = "Jul" };
         var ac3 = new AccountDAO() { UserName = "Ben" };
 
+       
+
         modelBuilder.Entity<AccountDAO>().HasData(new List<AccountDAO>() { ac1, ac2, ac3 });
 
         var u1 = new AppUserDAO() { IdUser = ac1.Id, FirstName = "Gabriel", LastName = "Dupond", PhoneNumber = "0546659845", City = "Bordeaux" };
@@ -146,6 +148,11 @@ public class MaDal : IdentityDbContext<AccountDAO, RoleDAO, Guid>
 
 
         modelBuilder.Entity<ObjectDAO>().HasData(new List<ObjectDAO>() { o1, o2, o3, o4 , o5 , o6 , o7 ,o8 ,o9});
+
+        var p1 = new PhotoDAO(){IdObject = o1.IdObject, Path = "https://unsplash.com/fr/photos/QwkqiuQLqBc"};
+        var p2 = new PhotoDAO(){IdObject = o1.IdObject, Path = "https://unsplash.com/fr/photos/7HtPUqmSUn4"};
+        var p3 = new PhotoDAO(){IdObject = o1.IdObject, Path = "https://unsplash.com/fr/photos/k4-DGL44s9Y"};
+        modelBuilder.Entity<PhotoDAO>().HasData(new List<PhotoDAO>(){p1,p2,p3});
 
         if (this.seedData != null)
         {

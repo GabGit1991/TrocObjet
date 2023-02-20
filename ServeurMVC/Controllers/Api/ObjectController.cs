@@ -30,7 +30,7 @@ public class ObjectController : Controller
         {
             Id = dao.IdObject,
             Label = dao.Label,
-            Description = dao.Description
+            Description = dao.Description,
         });
     }
 
@@ -42,6 +42,8 @@ public class ObjectController : Controller
         var model=mapper.Map<ObjectModel>(dao);
         return model;
     }
+
+    
 
     [HttpPost]
     public async Task<object> PostObject([FromBody]ObjectModel postObject){

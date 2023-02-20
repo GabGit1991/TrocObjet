@@ -6,4 +6,5 @@ public class PhotoDAO{
       public ObjectDAO Object { get; set; }
 
       public byte[]? ObjectPhoto {get; set;}
+      public string Path {get;set;}
 }
