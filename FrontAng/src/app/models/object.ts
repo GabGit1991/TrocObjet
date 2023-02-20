@@ -29,11 +29,11 @@ export class Object {
     //#endregion
 
     //#region estimatedPrice
-    private _estimatedPrice! : Number;
+    private _estimatedPrice! : number;
     public get estimatedPrice(){
     return this._estimatedPrice;
     }
-    public set estimatedPrice(v:Number){
+    public set estimatedPrice(v:number){
     // TODO : Vérifier la valeur de v
     // if(condition){
     // throw new Error('message');
