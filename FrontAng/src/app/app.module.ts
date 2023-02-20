@@ -9,6 +9,10 @@ import { AppUserComponent } from './pages/app-user/app-user.component';
 import { ObjectComponent } from './pages/object/list-objet/list-object.component';
 import { DetailsObjectComponent } from './pages/object/details-object/details-object.component';
 import { ListSearchResultComponent } from './controls/list-search-result/list-search-result.component';
+import { EditObjectComponent } from './pages/object/edit-object/edit-object.component';
+import { CreateObjectComponent } from './pages/object/create-object/create-object.component';
+import { ObjectHttpService } from './models/object-http.service';
+import { objectService } from './models/object.service';
 
 
 @NgModule({
@@ -17,7 +21,9 @@ import { ListSearchResultComponent } from './controls/list-search-result/list-se
     AppUserComponent,
     ObjectComponent,
     DetailsObjectComponent,
-    ListSearchResultComponent
+    ListSearchResultComponent,
+    EditObjectComponent,
+    CreateObjectComponent
   ],
   imports: [
     FormsModule,
@@ -25,7 +31,7 @@ import { ListSearchResultComponent } from './controls/list-search-result/list-se
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ ],
+  providers: [provide:objectService,useclass:ObjectHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
