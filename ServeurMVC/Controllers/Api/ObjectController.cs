@@ -1,6 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace api;
 
@@ -25,26 +26,28 @@ public class ObjectController : Controller
         {
             searchText = "";
         }
-        var daos = db.Objects.Where(c => c.Label.Contains(searchText)).ToArray();
+        var daos = db.Objects.Where(c => c.Label.Contains(searchText))
+                    .Include(c=>c.Photos).ToArray();
         return daos.Select(dao => new SearchResult()
         {
             Id = dao.IdObject,
             Label = dao.Label,
             Description = dao.Description,
+            //Photos = dao.Photos.Select(p => p.Url).ToList()
         });
     }
-
 
     // GET api/object/ "guid"
     [HttpGet("{id:guid}")]
     public object GetObject(Guid id) {
-        var dao = db.Objects.Find(id);
+        // var dao = db.Objects.Find(id);
+        var dao = db.Objects.Include(c => c.Photos).FirstOrDefault(c => c.IdObject == id);
         var model=mapper.Map<ObjectModel>(dao);
+        model.Photos = dao.Photos?.Select(p => new PhotoDAO { Path = p.Path }).ToList();
         return model;
     }
 
     
-
     [HttpPost]
     public async Task<object> PostObject([FromBody]ObjectModel postObject){
         if(!ModelState.IsValid){

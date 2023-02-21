@@ -7,6 +7,4 @@ public class SearchResult
     public string Description { get; set; }
     [JsonPropertyName("l")]
     public string Label { get; set; }
-
-
 }
